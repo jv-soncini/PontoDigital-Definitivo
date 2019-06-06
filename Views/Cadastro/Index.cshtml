@@ -1,0 +1,45 @@
+@{
+    Layout="_Layout";
+    Html.RenderPartial("_HeaderNavBar");
+}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style_cadastro.css">
+</head>
+
+
+<section class="meio">
+            <form class="" method="POST" action="index.html">
+    
+                <div class="formulario">
+    
+                    <label for="nome">Nome da Empresa</label>
+                    <br>
+                    <input name="nome" type="text" id="nome" maxlength="50" minlength="3" placeholder="Ex. Tsukamotors" required>
+                    <br>
+                    <label for="email" >E-mail</label>
+                    <br>
+                    <input name="email" type="email" id="email" placeholder="Ex. tsukamotors@sdadsa.com" required>
+                    <br>
+                    <label for="chave">Telefone</label>
+                    <br>
+                    <input name="telefone" type="tel" id="telefone" placeholder="Ex. 1234-5678" required>
+                    <br>
+
+                    <label for="DataNascimento">Data de Nicemento</label>
+                    <input name="DataNascimento" type="date" id="DataNacimento">
+
+                    <label for="senha">Senha</label>
+                    <br>
+                    <input name="senha" type="text" id="senha" placeholder="Ex. senha1234" required>
+                    
+                    <div class="linkagem">
+                        <label for="botao"></label>
+                        <input class="button" type="submit" value="Confirmar">
+
+                        <a  href='@Url.Action("Login", "Cliente")'>Ja possui conta ?</a>
+                    </div>
+                </div>
+                    
+        </section>

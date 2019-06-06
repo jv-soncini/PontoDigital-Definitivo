@@ -1,0 +1,42 @@
+@{
+    Layout="_Layout";
+    Html.RenderPartial("_HeaderNavBar");
+}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style_login.css">
+</head>
+<div class="meio">
+
+<form class="" method="POST" action="index.html">
+
+            <div class="formulario">
+
+                <label for="nome">Nome da Empresa</label>
+                <br>
+                <input name="nome" type="text" id="nome" maxlength="50" minlength="3" placeholder="Ex. Tsukamotors"
+                    required>
+                <br>
+                <label for="senha">Senha</label>
+                <br>
+                <input name="senha" type="text" id="senha" placeholder="Ex. Senha123" required>
+                <br>
+                <label for="chave">Chave do produto (habilitar interações)</label>
+                <br>
+                <input name="chave" type="text" id="chave">
+
+                <div class="linkagem">
+                <label for="botao"></label>
+                <input class="button" type="submit" value="Confirmar">
+                            <a href='@Url.Action("Index", "Cadastro")'>ainda não possui conta ?</a>
+
+                            <a href="#">esqueceu a senha ?</a>
+            
+                        </div>
+
+            </div>
+            
+    </section>
+
+</div>
