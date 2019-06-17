@@ -1,0 +1,30 @@
+@model PontoDigital_Definitivo.ViewModel.ComentariosViewModel
+<table>
+     <thead  >
+         <tr>
+             <th>Id</th>
+             <th>Comentario</th>
+             <th>Nome</th>
+
+         </tr>
+     </thead>
+ <tbody>
+         @foreach (var item in Model.Comentarios)
+         {
+     <tr>
+             @if(item == null && !item.Condicao.Equals("reprovado")){
+                 continue;
+             }
+         <td>@item.Id</td>
+         <td>@item.Comentario</td>
+         <td>@item.Nome</td>
+
+        <td>
+            <button><a href='@Url.Action("")'>Aprovar</a></button>
+            <input type="submit" value="Recusar"
+        </td>
+
+     </tr>
+         }
+ </tbody>
+ </table>

@@ -1,0 +1,32 @@
+@model PontoDigital_Definitivo.ViewModel.ComentariosViewModel
+@{
+     Html.RenderPartial("_HeaderNavBar");
+}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style-coments.css">
+</head>
+
+<h2> Nos de sua importante Avaliação</h2>
+
+<form method="POST" action='@Url.Action("Comentar","Cliente")'>
+    <input type="text" name="normie">
+    <textarea name="textarial" class="textaria" maxlength="100" rows="5" cols="45" required placeholder="Diga o que achou de nosso produto e atendimento"></textarea>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+
+@foreach (var item in Model.Comentarios )
+{
+    @if(item.Condicao.Equals("aprovado"))
+    {
+        
+    <div class="GatinhaComunista">
+        <h3>@item.Nome</h3>
+        <p id="GatinhaComunista">@item.Comentario</p>
+    </div>
+    }
+}

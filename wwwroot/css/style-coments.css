@@ -2,6 +2,16 @@
     padding: 0;
     margin: 0;
 }
+.menu a {
+    float: left;
+    position: relative;   
+    padding-top: 5px;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+}
 body {
     background: rgba(254,254,254,1);
 background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 30%, rgba(209,209,209,1) 80%, rgba(209,209,209,1) 100%);
@@ -13,16 +23,6 @@ background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(219,219,219,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=0 );
 
 }
-.menu a {
-    float: left;
-    position: relative;   
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 0.9em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Calibri', 'Open Sans', sans-serif;
-}
 ul {
     width: 100%;
     display: flex;
@@ -32,13 +32,13 @@ ul {
 li {
     list-style-type: none;
 }
-p {
-    font-family: 'Calibri', 'Open Sans', sans-serif;
-}
 h1 {
     font-family: 'Calibri', 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2em;
 }
-h2{
+p {
     font-family: 'Calibri', 'Open Sans', sans-serif;
 }
 .menu {
@@ -55,6 +55,7 @@ nav a{
     display: flex;
     width: 100%;
     flex-direction: row;
+
     
     
 }
@@ -65,7 +66,7 @@ nav a{
 }
 .container{
     width: 100%;
-    height: 100%;
+    height: 85px;
     display: flex;
     align-items: center;
 }
@@ -102,61 +103,14 @@ a:after {
 
 #login {
     padding: 0;
-    height: 85;
-    display: flex;
-    align-items: center;
     
     
 }
-.conteudo_top {
-    display: flex;
-    justify-content: space-around;
+.textaria {
+    resize: none;
 }
-.conteudo_top p{
-    width: 40%;
-    font-size: 30px
+#GatinhaComunista  {
+    background: #fff;
+    width: 20%;
 }
-h1 {
-    margin-bottom: 3em;
-    font-size: 32px;
-    padding: 2em 0 0 2em
-}
-.conteudo_top img {
-    box-shadow: 0px 0px  7px #333;
-    border-radius: 60px;
-    margin-bottom: 2em;
-}
-.conteudo_baixo {
-    display: flex;
-    margin-left: 2em;
-    
 
-}
-.historia {
-    margin-left: 3em;
-}
-.conteudo_baixo img {
-    box-shadow: 0px 0px  7px #333;
-    border-radius: 60px;
-    
-}
-.historia p {
-    width: 90%;
-    font-size: 30px;
-    padding: 0 0 0 2em;
-}
-.historia h2 {
-    margin-bottom: 1em;
-    font-size: 32px;
-    margin-left: 1.9em;
-    
-}
-#mapa {
-    width: 100%;
-    margin-top: 2em;
-    box-shadow: 0px 0px  10px #333;
-}
-.roda_pe {
-    background: #454545;
-    height: 250px;
-}
